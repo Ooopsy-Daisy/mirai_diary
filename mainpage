@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Web Site Title</title>
+    <style>
+        /* 単一画像のパターン繰り返し背景 */
+        body {
+            background-image: url('haikei.jpg'); /* リピートさせる背景画像 */
+            background-repeat: repeat;
+            background-color: #e0e0e0; /* 画像読み込み前のフォールバック色 */
+            font-family: "ＭＳ Ｐゴシック", "MS PGothic", "ヒラギノ角ゴ Pro W3", sans-serif;
+            color: #333333;
+            margin: 20px 0;
+            padding: 0;
+        }
+
+        /* 画面中央に配置するメイン枠 */
+        .main-container {
+            width: 640px; /* 当時定番の横幅 */
+            margin: 0 auto;
+            background-color: #ffffff;
+            border: 1px solid #999999;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* タイトル画像 */
+        .title-img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        /* 小さい字のサイト説明 */
+        .description {
+            font-size: 11px;
+            color: #666666;
+            line-height: 1.4;
+            margin-bottom: 25px;
+        }
+
+        /* 本文領域（左寄せに戻す） */
+        .main-content {
+            text-align: left;
+            font-size: 13px;
+            line-height: 1.6;
+            border-top: 1px dotted #ccc;
+            padding-top: 15px;
+        }
+
+
+
+        /* 今日の日記枠 */
+        .diary-box {
+            border: 1px solid #003366;
+            background-color: #f9fbfd;
+            padding: 12px 15px;
+            margin: 20px 0;
+        }
+
+        .diary-header {
+            border-bottom: 1px dashed #003366;
+            padding-bottom: 4px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .diary-title {
+            font-weight: bold;
+            font-size: 13px;
+            color: #003366;
+        }
+
+        .diary-date {
+            font-size: 11px;
+            color: #666666;
+        }
+
+        .diary-text {
+            font-size: 12px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+
+        /* アクセスカウンター */
+        .counter-box {
+            font-size: 12px;
+            margin-bottom: 15px;
+        }
+
+        /* コメント（一言掲示板）エリア */
+        .comment-section {
+            margin-top: 25px;
+            border-top: 1px dotted #ccc;
+            padding-top: 15px;
+        }
+
+        .comment-form {
+            background-color: #f4f4f4;
+            border: 1px solid #cccccc;
+            padding: 10px;
+            margin-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .comment-form input[type="text"],
+        .comment-form textarea {
+            font-size: 12px;
+            font-family: inherit;
+            border: 1px solid #999999;
+            padding: 2px 4px;
+        }
+
+        .comment-btn {
+            font-size: 11px;
+            cursor: pointer;
+        }
+
+        .comment-list {
+            font-size: 12px;
+        }
+
+        .comment-item {
+            border-bottom: 1px dashed #e0e0e0;
+            padding: 6px 0;
+        }
+
+        .comment-meta {
+            color: #666666;
+            font-size: 11px;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="main-container">
+        <div>
+            <img src="タイトル画像.png" alt="たのしんでいってね！" class="title-img" width="400" height="100">
+        </div>
+
+        <div class="counter-box">
+            あなたは <span class="counter-num">001234</span> 人目の訪問者です
+        </div>
+       
+        <div class="description">
+            当サイトは主に学級日誌を書く用の個人サイトです。<br>
+            推奨解像度：1024×768 / JavaScript有効でご覧ください。<br>
+            無断転載・直リンク・漢字添削はご遠慮願います。
+        </div>
+
+        <div class="main-content">
+            <p><b>管理人プロフィール</b></p>
+            <p>8月31日生まれ。A型。関東の高校生です。毎日更新が目標！相互リンク募集中！</p>
+            
+         <div class="diary-box">
+            <div class="diary-header">
+               <span class="diary-title">■ 今日の記事</span>
+               <span class="diary-date">2026/09/07 (Mon)</span>
+            </div>
+            <p class="diary-text">
+               今日は月曜日！(*´▽｀*)<br>
+               久しぶりの学校はやっぱりつかれるなーｗｗｗ('Д')<br>
+               でも今日も朝から一日頑張ったぞ！（褒めて♡）<br>
+               今日は久しぶりにホームページを更新！<br>
+               （楽しみにしていた人ゴメンナサイ。。。）<br>
+               学級日誌は一学期ぶり（！）なのでご無沙汰なかんじ<br>
+               漢字間違えないように気を付けないと！ｗｗ( *´艸｀)<br>
+               最近クラスのみんなはVIVANTの話題で持ち切りみたい！管理人は見てないケド(-_-;)<br>
+               好きなドラマや漫画で周りの人とつながれるとうれしいよね！<br>
+               管理人も残りの高校生活いろんな人と仲良くなりたいなあ～～<br>
+               Do Your Best, To Your Best!<br>
+               また明日！<br>
+               <br>
+               <br>
+               管理人
+            </p>
+         </div>
+            
+<p><b>■ 更新履歴</b></p>
+            <ul>
+                <li>2026/09/05：サイトを開設しました。</li>
+            </ul>
+
+            <div class="comment-section">
+                <p><b>■ 一言コメント</b></p>
+
+                <form class="comment-form" action="#" method="post">
+                    名前：<input type="text" name="name" size="15" value="名無しさん"><br><br>
+                    コメント：<br>
+                    <input type="text" name="message" size="45">
+                    <input type="submit" value="送信" class="comment-btn">
+                </form>
+
+                <div class="comment-list">
+                    <div class="comment-item">
+                        <span class="comment-meta">1. <b>管理人</b> - 2026/09/05 14:00</span>
+                        <div>足跡残していってください！</div>
+                    </div>
+                    <div class="comment-item">
+                        <span class="comment-meta">2. <b>校長＠打倒顧問！</b> - 2026/09/07 15:30</span>
+                        <div>藤井です。未来性たるもの熱中勉強！ならぬ熱中日誌w</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
